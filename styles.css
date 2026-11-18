@@ -2433,8 +2433,15 @@ a {
   .ocha-srv-item,
   .contact-social-cell {
     margin: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 22px 0;
+  }
+
+  .ocha-services-list {
+    gap: 0;
+  }
+
+  .ocha-services-header {
+    margin-bottom: 28px;
   }
 
   .detail-info-col .lowercase-display {
