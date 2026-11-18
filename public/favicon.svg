@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#0e0e0e" />
+  <path d="M12 18V12H18M46 12H52V18M52 46V52H46M18 52H12V46" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.45" />
+  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="600" letter-spacing="-1">f</text>
+</svg>
