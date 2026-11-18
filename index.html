@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fedorova — даша фёдорова / фотограф</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Minimal Fast Preloader -->
+  <div class="site-preloader" id="site-preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <span class="preloader-brand">fedorova</span>
+      <span class="preloader-count mono-meta" id="preloader-count">00%</span>
+    </div>
+    <div class="preloader-line" id="preloader-line"></div>
+  </div>
+
+  <!-- Fixed Minimal Header (inspired by éos) -->
+  <header class="site-header">
+    <div class="header-left">
+      <a href="#portfolio" class="brand-mark" data-nav="portfolio">fedorova</a>
+    </div>
+
+    <div class="header-center">
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#portfolio" class="nav-link is-active" data-nav="portfolio">Коллекции</a><span class="nav-comma">,</span>
+        <a href="#services" class="nav-link" data-nav="services">Услуги</a><span class="nav-comma">,</span>
+        <a href="#contact" class="nav-link" data-nav="contact">Контакты</a>
+      </nav>
+      <div class="header-clock" id="live-clock">18.11.2026 20:20:09 +GMT+5</div>
+    </div>
+
+    <div class="header-right">
+      <button class="text-cta" id="open-booking-btn" type="button">Забронировать</button>
+    </div>
+  </header>
+
+  <main id="app-main">
+    <!-- ==================== VIEW: PORTFOLIO (éos LEFT ACCORDION + SCATTERED GRID) ==================== -->
+    <section id="view-portfolio" class="page-view is-active">
+      <div class="eos-collection-layout">
+        <!-- Left Sticky Category Accordion -->
+        <aside class="eos-sidebar" aria-label="Категории съёмок">
+          <div class="eos-sidebar-top">
+            <button class="eos-all-btn is-active" id="eos-all-btn" type="button">Все</button>
+            <div class="eos-sidebar-controls">
+              <span class="mono-meta" id="eos-count-range">01–12 [↓]</span>
+              <button class="eos-mode-toggle mono-meta" id="eos-mode-toggle" type="button" title="Переключить вид">Index</button>
+            </div>
+          </div>
+
+          <div class="eos-accordion" id="eos-accordion">
+            <!-- Populated by app.js -->
+          </div>
+        </aside>
+
+        <!-- Right Scattered / Irregular Editorial Grid -->
+        <div class="eos-grid-stage">
+          <div id="portfolio-grid-container" class="eos-scattered-grid">
+            <!-- Populated by app.js -->
+          </div>
+
+          <!-- Optional Index Table Mode -->
+          <div id="portfolio-index-container" class="index-portfolio-wrap is-hidden">
+            <div class="index-table-head mono-label">
+              <span>№</span>
+              <span>Серия / проект</span>
+              <span>Жанр</span>
+              <span>Локация</span>
+              <span>Год</span>
+              <span></span>
+            </div>
+            <div id="portfolio-index-rows" class="index-table-body">
+              <!-- Populated by app.js -->
+            </div>
+            <div id="index-hover-preview" class="index-hover-preview" aria-hidden="true">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: SERVICES (ALIGNED TO HEADER NAV AXIS) ==================== -->
+    <section id="view-services" class="page-view">
+      <div class="ocha-services-wrap">
+        <div class="ocha-services-header">
+          <span class="ocha-slash-big">форматы съёмок</span>
+          <span class="ocha-paren-top">(услуги)</span>
+        </div>
+
+        <div class="ocha-services-list" id="services-matrix">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: CONTACT (ALIGNED TO HEADER NAV AXIS) ==================== -->
+    <section id="view-contact" class="page-view">
+      <div class="contact-axis-column">
+        <div class="contact-axis-head">
+          <div class="ocha-word-tl">даша<br />фёдорова</div>
+          <p class="contact-hero-note">
+            фотограф, тюмень. открыта к портретным, коммерческим съёмкам и мероприятиям.
+          </p>
+        </div>
+
+        <div class="contact-email-row">
+          <span class="mono-label">(почта)</span>
+          <div class="contact-email-actions">
+            <a href="mailto:hello@fedorova.photo" class="contact-giant-link">
+              hello@fedorova.photo
+            </a>
+            <button class="inline-link" id="copy-email-btn" type="button">
+              скопировать адрес
+            </button>
+          </div>
+        </div>
+
+        <div class="contact-socials-stack">
+          <a href="https://t.me/fedorova00" target="_blank" rel="noopener" class="contact-social-cell">
+            <span class="mono-label">(мессенджер)</span>
+            <div class="ocha-srv-slash">/telegram ↗</div>
+            <span class="mono-meta">@fedorova00</span>
+          </a>
+
+          <a href="https://instagram.com/fedorova00" target="_blank" rel="noopener" class="contact-social-cell">
+            <span class="mono-label">(лента)</span>
+            <div class="ocha-srv-slash">/instagram ↗</div>
+            <span class="mono-meta">@fedorova00</span>
+          </a>
+        </div>
+
+        <div class="contact-footer-note">
+          <p>
+            чтобы забронировать дату, просто напиши в telegram или на почту пару слов о задаче и желаемом дне съёмки. отвечаю в течение дня.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW: SERIES / SERVICE DETAIL PAGE (HORIZONTAL SCROLL) ==================== -->
+    <section id="view-detail" class="page-view">
+      <div class="detail-page-topbar">
+        <button class="inline-link" id="detail-back-btn" type="button">← Назад</button>
+        <span class="mono-meta" id="detail-page-index">[01]</span>
+      </div>
+      <div id="detail-page-content" class="detail-page-layout">
+        <!-- Populated dynamically by app.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="site-footer">
+    <div class="footer-col">
+      <span class="mono-meta">fedorova — photography</span>
+    </div>
+    <div class="footer-col footer-col--right">
+      <span class="mono-meta">© 2026 · тюмень</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
