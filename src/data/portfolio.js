@@ -1,0 +1,222 @@
+export const SITE_META = {
+  brand: 'fedorova',
+  fullName: 'даша фёдорова',
+  city: 'тюмень',
+  email: 'hello@fedorova.photo',
+  telegram: { handle: '@fedorova00', url: 'https://t.me/fedorova00' },
+  instagram: { handle: '@fedorova00', url: 'https://instagram.com/fedorova00' },
+  footerLeft: 'fedorova — photography',
+  footerRight: '© 2026 · тюмень',
+};
+
+export const NAV_ITEMS = [
+  { id: 'collections', label: 'Коллекции' },
+  { id: 'services', label: 'Услуги' },
+  { id: 'contact', label: 'Контакты' },
+];
+
+export const SERIES = [
+  {
+    id: 's01',
+    code: '[01]',
+    title: 'вечерний силуэт',
+    category: 'portrait',
+    categoryLabel: 'портрет',
+    location: 'студия / тюмень',
+    year: '2025',
+    camera: 'цифра / студийный свет',
+    description:
+      'портретная серия с акцентом на графику силуэта, фактуру бархата и чистый студийный свет.',
+    cover: '/photos/photo_2025-02-04_18-21-31.jpg',
+    gallery: [
+      '/photos/photo_2025-02-04_18-21-31.jpg',
+      '/photos/photo_2025-02-04_18-21-36.jpg',
+      '/photos/photo_2025-02-04_18-21-50.jpg',
+      '/photos/photo_2025-07-22_20-19-55.jpg',
+    ],
+  },
+  {
+    id: 's02',
+    code: '[02]',
+    title: 'розовый винил',
+    category: 'portrait',
+    categoryLabel: 'портрет',
+    location: 'студия / тюмень',
+    year: '2025',
+    camera: 'цифра / 50mm',
+    description:
+      'эдиториал-съёмка с контрастом плотного тёмного пальто, живого цветка и глянцевого розового фона.',
+    cover: '/photos/photo_2025-03-25_16-48-53.jpg',
+    gallery: [
+      '/photos/photo_2025-03-25_16-48-53.jpg',
+      '/photos/photo_2025-03-25_16-49-01.jpg',
+      '/photos/photo_2025-03-25_16-49-21.jpg',
+      '/photos/photo_2025-03-25_16-49-30.jpg',
+    ],
+  },
+  {
+    id: 's03',
+    code: '[03]',
+    title: 'двадцать шесть',
+    category: 'event',
+    categoryLabel: 'мероприятие',
+    location: 'студия / день рождения',
+    year: '2025',
+    camera: 'цифра / импульсный свет',
+    description:
+      'праздничная съёмка дня рождения и камерного вечера: живые эмоции, ирония, глянцевый фон и настроение момента.',
+    cover: '/photos/photo_2025-07-06_12-04-45.jpg',
+    gallery: [
+      '/photos/photo_2025-07-06_12-04-45.jpg',
+      'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=1200&q=80&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1553544260-f87e671974ee?w=1200&q=80&auto=format&fit=crop',
+    ],
+  },
+  {
+    id: 's04',
+    code: '[04]',
+    title: 'циклорама / оранж',
+    category: 'commercial',
+    categoryLabel: 'коммерция',
+    location: 'циклорама / цветной свет',
+    year: '2025',
+    camera: 'цифра / цветные фильтры',
+    description:
+      'коммерческий лукбук на цветной циклораме: движение, деним, чистый цветовой акцент и работа с пластикой.',
+    cover: '/photos/photo_2025-07-11_13-33-49.jpg',
+    gallery: [
+      '/photos/photo_2025-07-11_13-33-49.jpg',
+      '/photos/photo_2025-07-11_13-33-55.jpg',
+      '/photos/photo_2025-07-11_13-33-59.jpg',
+      '/photos/photo_2025-07-11_13-34-19.jpg',
+      'https://images.unsplash.com/photo-1603189343302-e603f7add05a?w=1200&q=80&auto=format&fit=crop',
+    ],
+  },
+  {
+    id: 's05',
+    code: '[05]',
+    title: 'белое кружево',
+    category: 'lifestyle',
+    categoryLabel: 'лайфстайл',
+    location: 'студия / мягкий свет',
+    year: '2025',
+    camera: 'цифра / 35mm + 50mm',
+    description:
+      'нежная светлая съёмка в пастельных тонах: фокус на взгляде, позе и мягких тенях.',
+    cover: '/photos/photo_2025-07-22_20-19-55.jpg',
+    gallery: [
+      '/photos/photo_2025-07-22_20-19-55.jpg',
+      'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=1200&q=80&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1592355591829-aaae33fcff1d?w=1200&q=80&auto=format&fit=crop',
+      '/photos/photo_2025-02-04_18-21-50.jpg',
+    ],
+  },
+  {
+    id: 's06',
+    code: '[06]',
+    title: 'деним и градиент',
+    category: 'commercial',
+    categoryLabel: 'коммерция',
+    location: 'студия / циклорама',
+    year: '2026',
+    camera: 'цифра / мягкий свет',
+    description:
+      'студийный коммерческий лукбук в дениме на мягком розово-сером градиенте: пластика, очки и чистая геометрия кадра.',
+    cover: '/photos/photo_2026-11-18_21-11-37.jpg',
+    gallery: [
+      '/photos/photo_2026-11-18_21-11-37.jpg',
+      '/photos/photo_2026-11-18_21-11-37 (2).jpg',
+      '/photos/photo_2026-11-18_21-11-38.jpg',
+      '/photos/photo_2026-11-18_21-11-39.jpg',
+    ],
+  },
+];
+
+export const SERVICES = [
+  {
+    id: 'srv-01',
+    code: '01 / портрет',
+    title: 'персональный и editorial-портрет',
+    summary: 'камерные съёмки для личного архива, артистов, экспертов и публикаций.',
+    price: 'от 18 000 ₽',
+    duration: '1.5–2 часа',
+    delivery: '40–60 кадров в цветокоррекции + 10 в ретуши',
+    specs: ['подбор локации и света', 'помощь с референсами и образом', 'опционально 35mm плёнка', 'отдача за 5–7 дней'],
+    image: '/photos/photo_2025-02-04_18-21-31.jpg',
+  },
+  {
+    id: 'srv-02',
+    code: '02 / мероприятия',
+    title: 'репортаж событий и закрытых ужинов',
+    summary: 'выставки, камерные ужины, дни рождения, презентации брендов и частные события.',
+    price: 'от 10 000 ₽ / час',
+    duration: 'от 2 часов',
+    delivery: 'превью 15 кадров в первые 24 часа, вся серия за 3 дня',
+    specs: ['деликатное присутствие', 'работа в сложном вечернем свете', 'живые эмоции и атмосфера места', 'закрытая онлайн-галерея'],
+    image: '/photos/photo_2025-07-06_12-04-45.jpg',
+  },
+  {
+    id: 'srv-03',
+    code: '03 / лайфстайл',
+    title: 'лайфстайл и живые истории',
+    summary: 'съёмки дома, на прогулке, в студии или в любимом пространстве без постановки.',
+    price: 'от 16 000 ₽',
+    duration: '1.5–2 часа',
+    delivery: '50+ живых кадров через 5 дней',
+    specs: ['естественный ритм без заученных поз', 'съёмка для одного человека, пары или семьи', 'возможен выезд за город'],
+    image: '/photos/photo_2025-07-22_20-19-55.jpg',
+  },
+  {
+    id: 'srv-04',
+    code: '04 / коммерция',
+    title: 'кампейны, лукбуки и команды',
+    summary: 'визуальные истории для брендов одежды, пространств и команд (без предметной каталожки).',
+    price: 'от 35 000 ₽',
+    duration: 'полдня / смена',
+    delivery: 'согласование мудборда + серия для сайта и соцсетей',
+    specs: ['разработка визуальной концепции', 'работа со стилистом и сет-дизайном', 'коммерческая лицензия на использование'],
+    image: '/photos/photo_2025-07-11_13-33-49.jpg',
+  },
+];
+
+export const CATEGORIES = [
+  {
+    id: 'portrait',
+    label: '01_ Портреты',
+    specs: ['Студия / естественный свет', 'Тюмень / выезд', '40–60 кадров', 'Отдача 5–7 дней'],
+    seriesIds: ['s01', 's02'],
+  },
+  {
+    id: 'event',
+    label: '02_ Мероприятия',
+    specs: ['Репортаж и праздники', 'Живые эмоции', 'Превью за 24 часа', 'Онлайн-галерея'],
+    seriesIds: ['s03'],
+  },
+  {
+    id: 'lifestyle',
+    label: '03_ Лайфстайл',
+    specs: ['Студия / дом / прогулка', 'Мягкий свет', '50+ кадров', 'Отдача 5 дней'],
+    seriesIds: ['s05'],
+  },
+  {
+    id: 'commercial',
+    label: '04_ Коммерция',
+    specs: ['Кампейны и лукбуки', 'Цветной свет и циклорама', 'Без предметки', 'Коммерческая лицензия'],
+    seriesIds: ['s04', 's06'],
+  },
+];
+
+export const PHOTO_TILES = [
+  { title: 'вечерний силуэт', code: '01/01', category: 'portrait', seriesId: 's01', img: '/photos/photo_2025-02-04_18-21-31.jpg' },
+  { title: 'белое кружево', code: '03/01', category: 'lifestyle', seriesId: 's05', img: '/photos/photo_2025-07-22_20-19-55.jpg' },
+  { title: 'розовый винил', code: '01/02', category: 'portrait', seriesId: 's02', img: '/photos/photo_2025-03-25_16-48-53.jpg' },
+  { title: 'утренний воздух', code: '03/02', category: 'lifestyle', seriesId: 's05', img: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=1000&q=80&auto=format&fit=crop' },
+  { title: 'двадцать шесть', code: '02/01', category: 'event', seriesId: 's03', img: '/photos/photo_2025-07-06_12-04-45.jpg' },
+  { title: 'циклорама / 01', code: '04/01', category: 'commercial', seriesId: 's04', img: '/photos/photo_2025-07-11_13-33-49.jpg' },
+  { title: 'закрытый ужин', code: '02/02', category: 'event', seriesId: 's03', img: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=1000&q=80&auto=format&fit=crop' },
+  { title: 'циклорама / 02', code: '04/02', category: 'commercial', seriesId: 's04', img: '/photos/photo_2025-07-11_13-33-55.jpg' },
+  { title: 'бархат и свет', code: '01/03', category: 'portrait', seriesId: 's01', img: '/photos/photo_2025-02-04_18-21-36.jpg' },
+  { title: 'роза и тренч', code: '01/04', category: 'portrait', seriesId: 's02', img: '/photos/photo_2025-03-25_16-49-21.jpg' },
+  { title: 'пауза дня', code: '03/03', category: 'lifestyle', seriesId: 's05', img: 'https://images.unsplash.com/photo-1592355591829-aaae33fcff1d?w=1000&q=80&auto=format&fit=crop' },
+  { title: 'деним и градиент', code: '04/03', category: 'commercial', seriesId: 's06', img: '/photos/photo_2026-11-18_21-11-37.jpg' },
+];
