@@ -2460,12 +2460,17 @@ a {
   }
 
   .detail-info-col .service-specs li {
+    display: block;
+    border-top: none;
+    padding: 4px 0;
+    font-size: 13px;
+  }
+
+  .detail-info-col .service-specs li:has(.mono-label) {
     display: grid;
     grid-template-columns: 110px 1fr;
     gap: 12px;
-    border-top: none;
     padding: 5px 0;
-    font-size: 13px;
   }
 
   .detail-info-col .service-specs li .mono-label {
