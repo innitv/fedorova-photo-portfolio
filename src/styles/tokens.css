@@ -1,0 +1,75 @@
+/* ==========================================================================
+   DESIGN TOKENS — Single Source of Truth
+   Colors, Typography, Spacing, Radii, Z-Index, Motion
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --color-bg: #ffffff;
+  --color-bg-soft: #f6f6f4;
+  --color-bg-dark: #0e0e0e;
+  --color-ink: #0e0e0e;
+  --color-ink-muted: #7a7a76;
+  --color-ink-subtle: #b8b8b4;
+  --color-ink-inverse: #ffffff;
+  --color-ink-inverse-muted: rgba(255, 255, 255, 0.78);
+  --color-hairline: rgba(14, 14, 14, 0.12);
+  --color-header-glass: rgba(255, 255, 255, 0.92);
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+
+  --text-2xs: 10px;
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-md: 13px;
+  --text-base: 14px;
+  --text-body: 15px;
+  --text-lg: 17px;
+  --text-price: clamp(20px, 2.2vw, 28px);
+  --text-heading: clamp(24px, 3vw, 42px);
+  --text-display: clamp(28px, 3.6vw, 48px);
+  --text-giant: clamp(40px, 5.8vw, 88px);
+
+  --leading-none: 0.9;
+  --leading-tight: 1.05;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.6;
+
+  --tracking-editorial: -0.05em;
+  --tracking-tight: -0.03em;
+  --tracking-normal: -0.015em;
+  --tracking-mono: 0.04em;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 48px;
+  --space-9: 72px;
+  --space-10: 110px;
+  --gutter: clamp(16px, 3vw, 44px);
+
+  /* Radii */
+  --radius-none: 0px;
+  --radius-pill: 999px;
+  --radius-full: 50%;
+
+  /* Z-Index */
+  --z-preview: 30;
+  --z-header: 40;
+  --z-cursor: 80;
+  --z-preloader: 100;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 0.2s;
+  --duration-base: 0.45s;
+  --duration-slow: 0.7s;
+}
