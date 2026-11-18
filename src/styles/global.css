@@ -126,12 +126,7 @@ body.is-ready .reveal-item.is-visible {
 }
 
 .eos-tile-media img {
-  opacity: 0;
-  transition: opacity 0.45s var(--ease), transform 0.7s var(--ease);
-}
-
-.eos-tile-media img.is-img-loaded {
-  opacity: 1;
+  transition: transform 0.7s var(--ease);
 }
 
 button {

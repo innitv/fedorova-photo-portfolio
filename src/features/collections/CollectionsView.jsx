@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import { CATEGORIES, PHOTO_TILES, SERIES } from '@/data/portfolio';
+import { useRevealObserver } from '@/hooks/useRevealObserver';
 
 export function CollectionsView({ onOpenSeries }) {
   const [activeFilter, setActiveFilter] = useState('all');
   const [mode, setMode] = useState('grid');
   const [hoverPreview, setHoverPreview] = useState({ visible: false, src: '' });
   const [loadedImgs, setLoadedImgs] = useState({});
+
+  useRevealObserver(`${activeFilter}-${mode}`);
 
   const tiles =
     activeFilter === 'all'
@@ -117,9 +120,6 @@ export function CollectionsView({ onOpenSeries }) {
                       alt={tile.title}
                       loading={idx < 4 ? 'eager' : 'lazy'}
                       decoding="async"
-                      className={loadedImgs[tile.img] ? 'is-img-loaded' : ''}
-                      onLoad={() => markLoaded(tile.img)}
-                      onError={() => markLoaded(tile.img)}
                     />
                   </div>
                   <figcaption className="eos-tile-caption">
