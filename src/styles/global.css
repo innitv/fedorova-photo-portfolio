@@ -2484,7 +2484,7 @@ a {
   .detail-info-col .service-specs li {
     display: block;
     border-top: none;
-    padding: 4px 0;
+    padding: 4px 0 4px 122px;
     font-size: 13px;
   }
 
