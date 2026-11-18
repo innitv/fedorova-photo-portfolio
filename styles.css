@@ -2445,6 +2445,28 @@ a {
     margin-bottom: 28px;
   }
 
+  .contact-axis-column {
+    padding: 28px var(--gutter) 64px;
+  }
+
+  .contact-axis-head {
+    padding-bottom: 28px;
+  }
+
+  .contact-email-row {
+    padding: 22px 0 24px;
+  }
+
+  .contact-email-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .contact-footer-note {
+    margin-top: 24px;
+  }
+
   .detail-info-col .lowercase-display {
     font-size: 28px;
     margin-bottom: 10px;
